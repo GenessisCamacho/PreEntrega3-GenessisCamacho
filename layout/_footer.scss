@@ -1,0 +1,43 @@
+.footer {
+    grid-area: footer;
+    border: 2px solid #f5f4ed;
+    background: #ED213A;
+  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A);
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer section {
+    a {
+      margin-inline: 8px;
+    }
+  
+    div {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    img {
+      margin-left: 8px;
+    }
+  
+    iframe {
+      margin: 8px;
+    }
+  
+    p {
+      margin-right: 30px;
+    }
+  }
+  

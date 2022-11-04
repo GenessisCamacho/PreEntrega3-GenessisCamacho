@@ -1,0 +1,93 @@
+ /**DESKTOP**/
+  
+ .container-fluid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+  
+  .header {
+    grid-area: header;
+    border: 2px solid #f5f4ed;
+    background: #ED213A;
+  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A);
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .tituloheader {
+    -webkit-animation: text-focus-in 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+  
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  .logobarra {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  .navBar {
+    grid-area: header;
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  
+    &:hover {
+      color: rgb(247, 212, 17);
+    }
+  }
+  

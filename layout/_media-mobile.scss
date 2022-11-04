@@ -1,0 +1,27 @@
+/**MOBILE**/
+@media (max-width: 576px) {
+    .container-fluid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6);
+    }
+  
+    .navBar {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .socios, section.partidosYoutube {
+      padding: 20px 20px;
+    }
+  
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+    }
+  
+    footer section div {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
